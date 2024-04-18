@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:tugas_tracker/menu.dart';
+import 'package:tugas_tracker/screens/main_menu.dart';
 
 void main() {
   testWidgets('SnackBar control test', (WidgetTester tester) async {
