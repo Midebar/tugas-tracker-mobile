@@ -13,8 +13,8 @@ Install flutter - buat card - buat folder untuk merapihkan file kode sesuai deng
 
 ### Tugas 8 
 #### Jelaskan perbedaan antara Navigator.push() dan Navigator.pushReplacement(), disertai dengan contoh mengenai penggunaan kedua metode tersebut yang tepat!
-Nagigator.push: 
-navigator.pushreplacement: 
+Nagigator.push: menambah navigasi page pada stack navigasi
+navigator.pushreplacement:  mreplace navigasi page pada stack navigasi
 Misal: halaman utama - lihat tugas -> tambah tugas
 push: halaman utama - lihat tugas - tambah tugas
 pushreplacement :halaman utama - tambah tugas
