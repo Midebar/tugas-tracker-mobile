@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_tracker/screens/list_tugas.dart';
 import 'package:tugas_tracker/screens/main_menu.dart';
 import 'package:tugas_tracker/screens/tracker_form.dart';
 
@@ -10,12 +11,12 @@ class LeftDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          DrawerHeader(
-            decoration: const BoxDecoration(
+          const DrawerHeader(
+            decoration: BoxDecoration(
               color: Colors.indigo,
             ),
             child: Column(
-              children: const [
+              children: [
                 Text(
                   'Tugas Tracker',
                   textAlign: TextAlign.center,
@@ -57,6 +58,17 @@ class LeftDrawer extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (context) => const TrackerFormPage(),
                   ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.library_books_rounded),
+            title: const Text('Daftar Tugas'),
+            onTap: () {
+              // Route menu ke halaman buku
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const TugasPage()),
+              );
             },
           ),
         ],
